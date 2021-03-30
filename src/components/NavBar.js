@@ -1,8 +1,7 @@
-function App() {
+function navBar() {
     return <>
-             <NavBar />
-             <h1>Libreria Betancourt</h1>
-             <h2>Los mejores libros para su biblioteca</h2>
+            
+             
             
             <nav class="navbar navbar-expand-sm bg-light navbar-light">
                 <ul class="navbar-nav">
@@ -25,3 +24,5 @@ function App() {
             </nav>
     </>;
 }
+
+export default navBar;
