@@ -15,10 +15,10 @@ function navBar() {
                         <a class="nav-link" href="#">Religión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Filosofía</a>
+                        <a class="nav-link" href="#">Filosofía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Sociología</a>
+                        <a class="nav-link" href="#">Sociología</a>
                     </li>
                 </ul>
             </nav>

@@ -10,7 +10,7 @@ function App() {
       <h1>E-commerce Betancourt</h1>
       <h2>Los mejores libros para su biblioteca</h2>
       <NavBar />
-      <button className="btn btn primary">Prueba bootstrap</button>
+     
       
     </div>
   );
