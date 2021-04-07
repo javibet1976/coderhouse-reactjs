@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Button from "./components/Button/Button";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCount from "./components/ItemCount/ItemCount";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
       </div>
 
       <ItemListContainer greeting="Aquí encontrarás muchos libros a muy bajo precio" />
+      <br />
+      <div className="marginTopProvisional">
+        <ItemCount />
+      </div>
     </>
   );
 }

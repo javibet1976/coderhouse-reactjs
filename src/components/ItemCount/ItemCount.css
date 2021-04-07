@@ -1,0 +1,20 @@
+.marginTopProvisional {
+  margin-top: 150px;
+  color: red;
+  text-align: center;
+}
+
+.contador-container {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: lightblue;
+  height: 150px;
+}
+
+.botonera-contador {
+  display: flex;
+}
