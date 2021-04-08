@@ -1,9 +1,3 @@
-.marginTopProvisional {
-  margin-top: 150px;
-  color: red;
-  text-align: center;
-}
-
 .contador-container {
   background-color: blue;
   display: flex;

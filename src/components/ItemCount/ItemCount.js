@@ -7,27 +7,27 @@ export default class ItemCount extends Component {
     super();
 
     this.state = {
-      numerocontador: 0,
+      count: 0,
     };
   }
 
   handleIncrement = () => {
-    this.setState({ count: this.state.numerocontador + 1 });
+    this.setState({ count: this.state.count + 1 });
   };
 
   handleDecrement = () => {
-    this.setState({ count: this.state.numerocontador - 1 });
+    this.setState({ count: this.state.count - 1 });
   };
 
   render() {
     return (
       <div className="contador-container">
-        <p>{this.state.numerocontador}</p>
+        <p>{this.state.count}</p>
         <div className="botonera-contador">
-          <Button secondary ocClick={this.handleIncrement}>
+          <Button secondary onClick={this.handleIncrement}>
             +
           </Button>
-          <Button secondary ocClick={this.handleDecrement}>
+          <Button secondary onClick={this.handleDecrement}>
             -
           </Button>
         </div>
