@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Item.css";
 
 const productos = [
   {
@@ -46,7 +47,7 @@ class Item extends Component {
   render() {
     return (
       <div>
-        <ul>
+        <ul className="productos">
           {this.state.ciclos_de_vida.map((a) => {
             return (
               <li>
