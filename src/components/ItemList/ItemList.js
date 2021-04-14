@@ -1,16 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
+import Item from "../Item/Item";
+import "../Item/Item.css";
 
-export default class itemList extends Component {
-  render() {
-    return (
-      <div className="listaDeArticulos">
-        <ul>
-          <li>Economía</li>
-          <li>Filosofía</li>
-          <li>Sociología</li>
-          <li>Religión</li>
-        </ul>
-      </div>
-    );
-  }
+function ItemList({ productos }) {
+  return (
+    <div className="listaDeArticulos">
+      {productos && (
+        <div>
+          {productos.map((item) => (
+            <ul className="productos">
+              <Item producto={item} />
+            </ul>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
+
+export default ItemList;

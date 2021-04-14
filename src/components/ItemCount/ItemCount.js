@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./ItemCount.css";
 import { Button } from "semantic-ui-react";
+import "./ItemCount.css";
 
 export default class ItemCount extends Component {
   constructor() {

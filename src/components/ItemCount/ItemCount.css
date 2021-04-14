@@ -12,3 +12,8 @@
 .botonera-contador {
   display: flex;
 }
+
+.clearfix {
+  float: none;
+  clear: both;
+}
