@@ -1,7 +1,7 @@
 import React from "react";
 
-function ItemDetail() {
+function Promos() {
   return <div></div>;
 }
 
-export default ItemDetail;
+export default Promos;
