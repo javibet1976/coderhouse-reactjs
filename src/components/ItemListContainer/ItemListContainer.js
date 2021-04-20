@@ -3,7 +3,7 @@ import ItemList from "../ItemList/ItemList.js";
 import { PRODUCTS } from "../Constants";
 import "./ItemListContainer.css";
 
-export default function ItemListContainer({ greeting }) {
+function ItemListContainer({ greeting }) {
   const [productos, setProductos] = useState([]);
 
   const obtenerProductos = new Promise((resolve, reject) => {
@@ -25,3 +25,5 @@ export default function ItemListContainer({ greeting }) {
     </>
   );
 }
+
+export default ItemListContainer;

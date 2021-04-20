@@ -9,6 +9,7 @@ import Home from "../src/Views/Home/Home";
 import Promos from "../src/Views/Promos/Promos";
 import Contacto from "../src/Views/Contacto/Contacto";
 import Conferencias from "../src/Views/Conferencias/Conferencias";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import "./App.css";
 
 function App() {
@@ -19,15 +20,14 @@ function App() {
           <NavBar />
           <h1>E-commerce Betancourt</h1>
           <h2>Los mejores libros para su biblioteca</h2>
-          <Button click="Presione" />
         </div>
-        <ItemListContainer greeting="Aquí encontrarás muchos libros a muy bajo precio" />
         <br />
         <Switch>
-          <Route path="/" exact component={ItemListContainer} />
-          <Route path="/Promos" component={Promos} />
-          <Route path="/Contacto" component={Contacto} />
-          <Route path="/Conferencias" component={Conferencias} />
+          <Route exact path="/Promos" component={Promos} />
+          <Route exact path="/Contacto" component={Contacto} />
+          <Route exact path="/Conferencias" component={Conferencias} />
+          <Route exact path="/detalle/:id" component={ItemDetailContainer} />
+          <Route path="/" component={ItemListContainer} />
         </Switch>
 
         <div className="marginTopProvisional">
